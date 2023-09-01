@@ -1,0 +1,14 @@
+{
+  "project_name": "rj-orgao",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "gcp_project_id": "rj-orgao",
+  "github_default_assignee": "",
+  "gcs_flows_bucket": "rj-orgao-flows",
+  "prefeitura_rio_package_version": "1.0.0rc1",
+  "dbt_bigquery_package_version": "^1.6.1",
+  "_copy_without_render": [
+    ".github/workflows/*.yaml",
+    ".mergify.yml",
+    "queries/models/**/*"
+  ]
+}
